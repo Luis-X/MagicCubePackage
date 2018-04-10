@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D147E8F4207B6A5700780261 /* WeexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147E8F3207B6A5700780261 /* WeexViewController.swift */; };
+		D147E8F9207B8F5100780261 /* MagicRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147E8F8207B8F5100780261 /* MagicRouterManager.swift */; };
+		D17CBAF720720A0A00BAF207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBAF620720A0A00BAF207 /* AppDelegate.swift */; };
+		D17CBAF920720A0A00BAF207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBAF820720A0A00BAF207 /* ViewController.swift */; };
+		D17CBAFC20720A0A00BAF207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17CBAFA20720A0A00BAF207 /* Main.storyboard */; };
+		D17CBB0120720A0C00BAF207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17CBAFF20720A0C00BAF207 /* LaunchScreen.storyboard */; };
+		D17CBB0C20720A0C00BAF207 /* MagicCubePackageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBB0B20720A0C00BAF207 /* MagicCubePackageTests.swift */; };
+		D17CBB1720720A0C00BAF207 /* MagicCubePackageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBB1620720A0C00BAF207 /* MagicCubePackageUITests.swift */; };
+		D17CBB382072428E00BAF207 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBB372072428E00BAF207 /* BaseViewController.swift */; };
+		D17CBB3A207242A900BAF207 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBB39207242A900BAF207 /* BaseTabBarViewController.swift */; };
+		D17CBB3C207242C400BAF207 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBB3B207242C400BAF207 /* BaseNavigationViewController.swift */; };
+		D17CBB462072431D00BAF207 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CBB452072431D00BAF207 /* HomeViewController.swift */; };
+		D1ECBE99207B4D420015146D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1ECBE98207B4D410015146D /* Images.xcassets */; };
+		E6E6D29AD5B810F2CFED893D /* Pods_MagicCubePackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546ABE22E4B96E60EBE501A4 /* Pods_MagicCubePackage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D17CBB0820720A0C00BAF207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17CBAEB20720A0A00BAF207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D17CBAF220720A0A00BAF207;
+			remoteInfo = MagicCubePackage;
+		};
+		D17CBB1320720A0C00BAF207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17CBAEB20720A0A00BAF207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D17CBAF220720A0A00BAF207;
+			remoteInfo = MagicCubePackage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15FF88BB52FD3B40A3909842 /* Pods-MagicCubePackage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCubePackage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCubePackage/Pods-MagicCubePackage.debug.xcconfig"; sourceTree = "<group>"; };
+		546ABE22E4B96E60EBE501A4 /* Pods_MagicCubePackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicCubePackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FA769FAE8E1D1CA1E32826 /* Pods-MagicCubePackage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCubePackage.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCubePackage/Pods-MagicCubePackage.release.xcconfig"; sourceTree = "<group>"; };
+		D147E8F3207B6A5700780261 /* WeexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexViewController.swift; sourceTree = "<group>"; };
+		D147E8F8207B8F5100780261 /* MagicRouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRouterManager.swift; sourceTree = "<group>"; };
+		D17CBAF320720A0A00BAF207 /* MagicCubePackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicCubePackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17CBAF620720A0A00BAF207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D17CBAF820720A0A00BAF207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D17CBAFB20720A0A00BAF207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D17CBB0020720A0C00BAF207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D17CBB0220720A0C00BAF207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17CBB0720720A0C00BAF207 /* MagicCubePackageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicCubePackageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17CBB0B20720A0C00BAF207 /* MagicCubePackageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCubePackageTests.swift; sourceTree = "<group>"; };
+		D17CBB0D20720A0C00BAF207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17CBB1220720A0C00BAF207 /* MagicCubePackageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicCubePackageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17CBB1620720A0C00BAF207 /* MagicCubePackageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCubePackageUITests.swift; sourceTree = "<group>"; };
+		D17CBB1820720A0C00BAF207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17CBB252072367300BAF207 /* MagicCubePackage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicCubePackage-Bridging-Header.h"; sourceTree = "<group>"; };
+		D17CBB372072428E00BAF207 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D17CBB39207242A900BAF207 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		D17CBB3B207242C400BAF207 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		D17CBB452072431D00BAF207 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D1ECBE98207B4D410015146D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D17CBAF020720A0A00BAF207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E6D29AD5B810F2CFED893D /* Pods_MagicCubePackage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17CBB0420720A0C00BAF207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17CBB0F20720A0C00BAF207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E50922279F6209BBB0AC9B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15FF88BB52FD3B40A3909842 /* Pods-MagicCubePackage.debug.xcconfig */,
+				93FA769FAE8E1D1CA1E32826 /* Pods-MagicCubePackage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AECE5F5F31263B728AE290D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				546ABE22E4B96E60EBE501A4 /* Pods_MagicCubePackage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D147E8ED207B694500780261 /* Weex */ = {
+			isa = PBXGroup;
+			children = (
+				D147E8EF207B6A1C00780261 /* Controller */,
+				D147E8EE207B6A1C00780261 /* Model */,
+				D147E8F0207B6A1C00780261 /* View */,
+			);
+			path = Weex;
+			sourceTree = "<group>";
+		};
+		D147E8EE207B6A1C00780261 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D147E8EF207B6A1C00780261 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D147E8F3207B6A5700780261 /* WeexViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D147E8F0207B6A1C00780261 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D17CBAEA20720A0A00BAF207 = {
+			isa = PBXGroup;
+			children = (
+				D17CBAF520720A0A00BAF207 /* MagicCubePackage */,
+				D17CBB0A20720A0C00BAF207 /* MagicCubePackageTests */,
+				D17CBB1520720A0C00BAF207 /* MagicCubePackageUITests */,
+				D17CBAF420720A0A00BAF207 /* Products */,
+				1E50922279F6209BBB0AC9B0 /* Pods */,
+				AECE5F5F31263B728AE290D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D17CBAF420720A0A00BAF207 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBAF320720A0A00BAF207 /* MagicCubePackage.app */,
+				D17CBB0720720A0C00BAF207 /* MagicCubePackageTests.xctest */,
+				D17CBB1220720A0C00BAF207 /* MagicCubePackageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D17CBAF520720A0A00BAF207 /* MagicCubePackage */ = {
+			isa = PBXGroup;
+			children = (
+				D147E8ED207B694500780261 /* Weex */,
+				D17CBB3D207242EC00BAF207 /* Package */,
+				D17CBB312072426300BAF207 /* Base */,
+				D17CBB30207241DC00BAF207 /* Home */,
+				D17CBAF620720A0A00BAF207 /* AppDelegate.swift */,
+				D17CBAF820720A0A00BAF207 /* ViewController.swift */,
+				D17CBAFA20720A0A00BAF207 /* Main.storyboard */,
+				D17CBAFF20720A0C00BAF207 /* LaunchScreen.storyboard */,
+				D1ECBE98207B4D410015146D /* Images.xcassets */,
+				D17CBB0220720A0C00BAF207 /* Info.plist */,
+				D17CBB252072367300BAF207 /* MagicCubePackage-Bridging-Header.h */,
+			);
+			path = MagicCubePackage;
+			sourceTree = "<group>";
+		};
+		D17CBB0A20720A0C00BAF207 /* MagicCubePackageTests */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB0B20720A0C00BAF207 /* MagicCubePackageTests.swift */,
+				D17CBB0D20720A0C00BAF207 /* Info.plist */,
+			);
+			path = MagicCubePackageTests;
+			sourceTree = "<group>";
+		};
+		D17CBB1520720A0C00BAF207 /* MagicCubePackageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB1620720A0C00BAF207 /* MagicCubePackageUITests.swift */,
+				D17CBB1820720A0C00BAF207 /* Info.plist */,
+			);
+			path = MagicCubePackageUITests;
+			sourceTree = "<group>";
+		};
+		D17CBB30207241DC00BAF207 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB362072426D00BAF207 /* Controller */,
+				D17CBB342072426D00BAF207 /* Model */,
+				D17CBB352072426D00BAF207 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D17CBB312072426300BAF207 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB322072426300BAF207 /* Controller */,
+				D17CBB332072426300BAF207 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D17CBB322072426300BAF207 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB372072428E00BAF207 /* BaseViewController.swift */,
+				D17CBB39207242A900BAF207 /* BaseTabBarViewController.swift */,
+				D17CBB3B207242C400BAF207 /* BaseNavigationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D17CBB332072426300BAF207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D17CBB342072426D00BAF207 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D17CBB352072426D00BAF207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D17CBB362072426D00BAF207 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB452072431D00BAF207 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D17CBB3D207242EC00BAF207 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				D17CBB3E207242EC00BAF207 /* Release */,
+				D17CBB3F207242EC00BAF207 /* Manager */,
+				D17CBB40207242EC00BAF207 /* Components */,
+				D17CBB41207242EC00BAF207 /* SDK */,
+				D17CBB42207242EC00BAF207 /* Resource */,
+				D17CBB43207242EC00BAF207 /* Tool */,
+				D17CBB44207242EC00BAF207 /* Vender */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		D17CBB3E207242EC00BAF207 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		D17CBB3F207242EC00BAF207 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D147E8F8207B8F5100780261 /* MagicRouterManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D17CBB40207242EC00BAF207 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D17CBB41207242EC00BAF207 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		D17CBB42207242EC00BAF207 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D17CBB43207242EC00BAF207 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D17CBB44207242EC00BAF207 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D17CBAF220720A0A00BAF207 /* MagicCubePackage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17CBB1B20720A0C00BAF207 /* Build configuration list for PBXNativeTarget "MagicCubePackage" */;
+			buildPhases = (
+				AF153BB69EAC58F07EC09293 /* [CP] Check Pods Manifest.lock */,
+				D17CBAEF20720A0A00BAF207 /* Sources */,
+				D17CBAF020720A0A00BAF207 /* Frameworks */,
+				D17CBAF120720A0A00BAF207 /* Resources */,
+				4644203E46D45F78E84B2702 /* [CP] Embed Pods Frameworks */,
+				51573377BA3189D0519DADA1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicCubePackage;
+			productName = MagicCubePackage;
+			productReference = D17CBAF320720A0A00BAF207 /* MagicCubePackage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D17CBB0620720A0C00BAF207 /* MagicCubePackageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17CBB1E20720A0C00BAF207 /* Build configuration list for PBXNativeTarget "MagicCubePackageTests" */;
+			buildPhases = (
+				D17CBB0320720A0C00BAF207 /* Sources */,
+				D17CBB0420720A0C00BAF207 /* Frameworks */,
+				D17CBB0520720A0C00BAF207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D17CBB0920720A0C00BAF207 /* PBXTargetDependency */,
+			);
+			name = MagicCubePackageTests;
+			productName = MagicCubePackageTests;
+			productReference = D17CBB0720720A0C00BAF207 /* MagicCubePackageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D17CBB1120720A0C00BAF207 /* MagicCubePackageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17CBB2120720A0C00BAF207 /* Build configuration list for PBXNativeTarget "MagicCubePackageUITests" */;
+			buildPhases = (
+				D17CBB0E20720A0C00BAF207 /* Sources */,
+				D17CBB0F20720A0C00BAF207 /* Frameworks */,
+				D17CBB1020720A0C00BAF207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D17CBB1420720A0C00BAF207 /* PBXTargetDependency */,
+			);
+			name = MagicCubePackageUITests;
+			productName = MagicCubePackageUITests;
+			productReference = D17CBB1220720A0C00BAF207 /* MagicCubePackageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D17CBAEB20720A0A00BAF207 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = LuisX;
+				TargetAttributes = {
+					D17CBAF220720A0A00BAF207 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					D17CBB0620720A0C00BAF207 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D17CBAF220720A0A00BAF207;
+					};
+					D17CBB1120720A0C00BAF207 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D17CBAF220720A0A00BAF207;
+					};
+				};
+			};
+			buildConfigurationList = D17CBAEE20720A0A00BAF207 /* Build configuration list for PBXProject "MagicCubePackage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D17CBAEA20720A0A00BAF207;
+			productRefGroup = D17CBAF420720A0A00BAF207 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D17CBAF220720A0A00BAF207 /* MagicCubePackage */,
+				D17CBB0620720A0C00BAF207 /* MagicCubePackageTests */,
+				D17CBB1120720A0C00BAF207 /* MagicCubePackageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D17CBAF120720A0A00BAF207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1ECBE99207B4D420015146D /* Images.xcassets in Resources */,
+				D17CBB0120720A0C00BAF207 /* LaunchScreen.storyboard in Resources */,
+				D17CBAFC20720A0A00BAF207 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17CBB0520720A0C00BAF207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17CBB1020720A0C00BAF207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4644203E46D45F78E84B2702 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MagicCubePackage/Pods-MagicCubePackage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/WeexSDK/WeexSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicCubePackage/Pods-MagicCubePackage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51573377BA3189D0519DADA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MagicCubePackage/Pods-MagicCubePackage-resources.sh",
+				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/QMUIResources.bundle",
+				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
+				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QMUIResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicCubePackage/Pods-MagicCubePackage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF153BB69EAC58F07EC09293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicCubePackage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D17CBAEF20720A0A00BAF207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D147E8F9207B8F5100780261 /* MagicRouterManager.swift in Sources */,
+				D17CBAF920720A0A00BAF207 /* ViewController.swift in Sources */,
+				D147E8F4207B6A5700780261 /* WeexViewController.swift in Sources */,
+				D17CBAF720720A0A00BAF207 /* AppDelegate.swift in Sources */,
+				D17CBB382072428E00BAF207 /* BaseViewController.swift in Sources */,
+				D17CBB3C207242C400BAF207 /* BaseNavigationViewController.swift in Sources */,
+				D17CBB3A207242A900BAF207 /* BaseTabBarViewController.swift in Sources */,
+				D17CBB462072431D00BAF207 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17CBB0320720A0C00BAF207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17CBB0C20720A0C00BAF207 /* MagicCubePackageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17CBB0E20720A0C00BAF207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17CBB1720720A0C00BAF207 /* MagicCubePackageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D17CBB0920720A0C00BAF207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D17CBAF220720A0A00BAF207 /* MagicCubePackage */;
+			targetProxy = D17CBB0820720A0C00BAF207 /* PBXContainerItemProxy */;
+		};
+		D17CBB1420720A0C00BAF207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D17CBAF220720A0A00BAF207 /* MagicCubePackage */;
+			targetProxy = D17CBB1320720A0C00BAF207 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D17CBAFA20720A0A00BAF207 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D17CBAFB20720A0A00BAF207 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D17CBAFF20720A0C00BAF207 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D17CBB0020720A0C00BAF207 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D17CBB1920720A0C00BAF207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D17CBB1A20720A0C00BAF207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D17CBB1C20720A0C00BAF207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FF88BB52FD3B40A3909842 /* Pods-MagicCubePackage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_DISPLAY_NAME = "Magic容器(Debug)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicCubePackage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luisx.MagicCubePackage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MagicCubePackage/MagicCubePackage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D17CBB1D20720A0C00BAF207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FA769FAE8E1D1CA1E32826 /* Pods-MagicCubePackage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_DISPLAY_NAME = "Magic容器";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicCubePackage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luisx.MagicCubePackage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MagicCubePackage/MagicCubePackage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D17CBB1F20720A0C00BAF207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicCubePackageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luisx.MagicCubePackageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicCubePackage.app/MagicCubePackage";
+			};
+			name = Debug;
+		};
+		D17CBB2020720A0C00BAF207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicCubePackageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luisx.MagicCubePackageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicCubePackage.app/MagicCubePackage";
+			};
+			name = Release;
+		};
+		D17CBB2220720A0C00BAF207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicCubePackageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luisx.MagicCubePackageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicCubePackage;
+			};
+			name = Debug;
+		};
+		D17CBB2320720A0C00BAF207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicCubePackageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luisx.MagicCubePackageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicCubePackage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D17CBAEE20720A0A00BAF207 /* Build configuration list for PBXProject "MagicCubePackage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17CBB1920720A0C00BAF207 /* Debug */,
+				D17CBB1A20720A0C00BAF207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17CBB1B20720A0C00BAF207 /* Build configuration list for PBXNativeTarget "MagicCubePackage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17CBB1C20720A0C00BAF207 /* Debug */,
+				D17CBB1D20720A0C00BAF207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17CBB1E20720A0C00BAF207 /* Build configuration list for PBXNativeTarget "MagicCubePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17CBB1F20720A0C00BAF207 /* Debug */,
+				D17CBB2020720A0C00BAF207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17CBB2120720A0C00BAF207 /* Build configuration list for PBXNativeTarget "MagicCubePackageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17CBB2220720A0C00BAF207 /* Debug */,
+				D17CBB2320720A0C00BAF207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D17CBAEB20720A0A00BAF207 /* Project object */;
+}
