@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTabBarViewController: UITabBarController {
+class BaseTabBarViewController: QMUITabBarViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

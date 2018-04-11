@@ -14,10 +14,14 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         
         let button = UIButton(type: .custom);
-        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100);
-        button.backgroundColor = UIColor.red;
+        button.backgroundColor = UIColor.gray;
+        button.setTitle("weex", for: .normal);
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside);
         self.view.addSubview(button);
+        button.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view);
+            make.size.equalTo(CGSize(width: 100, height: 100))
+        }
         // Do any additional setup after loading the view.
     }
 

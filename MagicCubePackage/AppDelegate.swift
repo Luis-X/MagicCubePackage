@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
+    var latestVer = String();
     var window: UIWindow?
 
     // 七、当应用程序载入后执行
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds);
         self.window?.rootViewController =  self.loadRootTabBarController();
+        self.window?.makeKeyAndVisible();
+        self.startWeexSDK();
+        self.checkAppUpdate(appId: "1130862662");
         return true;
     }
 
@@ -78,9 +83,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: 初始化标签栏
     func loadRootTabBarController() -> UITabBarController {
         
-        let array = [["viewController" : "HomeViewController", "title" : "首页", "normalImage" : "ui_normal@2x.png", "selectedImage" : "ui_selected@2x.png"],]
+        let array = [["page" : "HomeViewController", "title" : "首页", "img_normal" : "ui_normal@2x.png", "img_select" : "ui_selected@2x.png"],
+                     ["page" : "ViewController", "title" : "普通", "img_normal" : "ui_normal@2x.png", "img_select" : "ui_selected@2x.png"]]
         
-        let rootTabBarViewController = BaseTabBarViewController.init();
+        let rootTabBarViewController = BaseTabBarViewController();
         rootTabBarViewController.viewControllers = self.loadNavigationController(array: array);
         return rootTabBarViewController;
         
@@ -90,45 +96,87 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func loadNavigationController(array: Array< Dictionary <String, String> >) -> Array<UIViewController> {
         
         /*  Swift 中使用   NSClassFromString   注意点:
-         *  使用时会遇到的错误代码:
-         *      fatal error: unexpectedly found nil while unwrapping an Optinal value
-         *  原因:
-         *      swift在用字符串转为类型的时候,如果类型是自定义的,需要在类型字符串前面加上项目名称
+         *  使用时会遇到的错误代码: fatal error: unexpectedly found nil while unwrapping an Optinal value
+         *  原因: swift在用字符串转为类型的时候,如果类型是自定义的,需要在类型字符串前面加上项目名称
          */
         
-        var resultArray = Array<UIViewController>()
+        var resultArray = Array<UIViewController>();
+        var index = 0;
         for dic in array {
-            let normalImage = dic["normalImage"]!;
-            let selectedImage = dic["selectedImage"]!;
+            let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
+            let normalImage = dic["img_normal"]!;
+            let selectedImage = dic["img_select"]!;
             let title = dic["title"]!;
+            let page = dic["page"]!;
+            let className = namespace + "." + page;
+            let viewController:UIViewController;
             
-            let className = "MagicCubePackage." + dic["viewController"]!;
-            let viewControllerType = NSClassFromString(className) as! BaseViewController.Type;
-            let viewController = viewControllerType.init();
-            let navigationController = UINavigationController(rootViewController: viewController);
-            let tabBarItem = UITabBarItem(title: title, image: UIImage(named: normalImage), selectedImage: UIImage(named: selectedImage));
+            guard let Cls = NSClassFromString(className) as? UIViewController.Type  else {
+                print("无法转换 UIViewController");
+                continue;
+            }
+            
+            viewController = Cls.init();
+            let navigationController = QMUINavigationController.init(rootViewController: viewController);
+            let tabBarItem = UITabBarItem.init(title: title, image: UIImage(named: normalImage), tag: index);
+            tabBarItem.selectedImage = UIImage(named: selectedImage);
             navigationController.tabBarItem = tabBarItem;
             resultArray.append(navigationController);
+            index += 1;
         }
         return resultArray
     }
     
     func startWeexSDK() {
-        // business configuration
-        WXAppConfiguration.setAppGroup("SwiftWeexSample");
-        WXAppConfiguration.setAppName("SwiftWeexSample");
-        WXAppConfiguration.setAppVersion("1.0.0");
-        // init sdk environment
-        WXSDKEngine.initSDKEnviroment();
-        // register custom module and component，optional
-//        WXSDKEngine.registerModule("shopBase", with: nil);
-        // set the log level
-        WXDebugTool.setDebug(true);
-        WXLog.setLogLevel(.log);
-        
-//        WXDebugTool.setDebug(true);
-//        WXLog.setLogLevel(.error);
+        WeexManager.initWeexSDK();
     }
-
+    
+    func checkAppUpdate(appId: String) {
+        weak var weakSelf = self;
+        DispatchQueue.global(qos: .default).async {
+            let infoDic = Bundle.main.infoDictionary;
+            let currentVersion = infoDic!["CFBundleShortVersionString"] as! String;
+            let urlString = "https://itunes.apple.com/lookup?id=" + appId;
+            MagicNetworkManager.shared.POST(url: urlString, parameters: [:], success: { (response) in
+                
+                let array:Array<Any> = response["results"] as! Array;
+                if array.count > 0 {
+                    let releaseInfo:[String : Any] = array.first as! Dictionary;
+                    weakSelf?.latestVer = releaseInfo["version"] as! String;
+                    if Float(self.latestVer)! > Float(currentVersion)! {
+                        if !UserDefaults.standard.bool(forKey: (weakSelf?.latestVer)!) {
+                            UserDefaults.standard.set(false, forKey: (weakSelf?.latestVer)!);
+                            let alertView = UIAlertView(title: "New Version", message: "update", delegate: self, cancelButtonTitle: "cancle", otherButtonTitles: "update");
+                            alertView.show();
+                        }
+                    }
+                }
+                
+            }, failure: { (error) in
+                
+            });
+        }
+        
+    }
+    
+    // 弹框
+    func showAlertView(alertView: UIAlertView, buttonIndex: Int) {
+        switch buttonIndex {
+        case 0:
+            UserDefaults.standard.set(true, forKey: self.latestVer);
+            break;
+        case 1:
+            UIApplication.shared.openURL(URL(string: "itms-apps://itunes.apple.com/cn/app/weex-playground/id1130862662?mt=8")!);
+            break;
+        default:
+            break;
+        }
+        alertView.dismiss(withClickedButtonIndex: buttonIndex, animated: true);
+    }
+    
+    // MARK: UIAlertViewDelegate
+    func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
+        self.showAlertView(alertView: alertView, buttonIndex: buttonIndex);
+    }
 }
 

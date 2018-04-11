@@ -208,22 +208,26 @@ PODS:
     - QMUIKit/QMUIComponents/QMUITableViewHeaderFooterView
     - QMUIKit/QMUICore
   - QMUIKit/QMUIResources (2.4.0)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - SnapKit (4.0.0)
   - SocketRocket (0.4.2)
   - SwiftyJSON (4.0.0)
-  - WeexSDK (0.16.2)
+  - WeexSDK (0.18.0)
   - WXDevtool (0.15.3):
     - WeexSDK
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.7)
   - FDFullscreenPopGesture
   - JLRoutes (~> 2.0)
   - QMUIKit (~> 2.4.0)
+  - SDWebImage (= 3.7.5)
   - SnapKit
   - SocketRocket (= 0.4.2)
   - SwiftyJSON
-  - WeexSDK (~> 0.16.2)
+  - WeexSDK
   - WXDevtool (= 0.15.3)
 
 SPEC CHECKSUMS:
@@ -231,12 +235,13 @@ SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
   QMUIKit: dce5ccbcdd512c25e4d3d8d859efba4ee9c141f9
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  WeexSDK: 854ef66c9a90d609ad60e87c8b76affe2b772224
+  WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
   WXDevtool: 6c837383e778a9442ee500db4069a95be321dac6
 
-PODFILE CHECKSUM: aba9169ff4ba342030b8e6fd7799627d8e6d8e44
+PODFILE CHECKSUM: f0eb96054557b6a8dc47e72b842471a3579c728b
 
 COCOAPODS: 1.4.0

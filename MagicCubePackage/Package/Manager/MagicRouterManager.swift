@@ -39,7 +39,7 @@ class MagicRouterManager: NSObject {
     
     
     class func allActionManagementWithNavigationController(_ navigationController: UINavigationController!, _ data: Dictionary<String, Any>?, parameters: Dictionary<String, Any>)  {
-        print("参数:\(parameters)");
+//        print("参数:\(parameters)");
         // 通用参数
         //        let JLRoutePattern = parameters["JLRoutePattern"];
         //        let JLRouteScheme = parameters["JLRouteScheme"];
@@ -50,10 +50,6 @@ class MagicRouterManager: NSObject {
         var viewController: UIViewController?;
         
         switch page {
-        // ViewController
-        case "test":
-            viewController = ViewController();
-            break;
         // Weex
         case "weex":
             viewController = WeexViewController();

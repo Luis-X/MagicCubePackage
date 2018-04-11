@@ -50,6 +50,7 @@
 #import "WXJSExceptionInfo.h"
 #import "WXComponent.h"
 #import "WXMonitor.h"
+#import "WXExceptionUtils.h"
 #import "WXTracingManager.h"
 #import "WXSDKManager.h"
 #import "WXBridgeManager.h"
