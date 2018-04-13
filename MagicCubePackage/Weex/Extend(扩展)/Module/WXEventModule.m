@@ -43,10 +43,9 @@ WX_EXPORT_METHOD(@selector(fireNativeGlobalEvent:callback:))
         newURL = [NSURL URLWithString:url relativeToURL:weexInstance.scriptURL].absoluteString;
     }
     
-    UIViewController *controller = [[WeexViewController alloc] init];
-    ((WeexViewController *)controller).url = [NSURL URLWithString:newURL];
-    
-    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+    WeexViewController *controller = [[WeexViewController alloc] init];
+    controller.url = [NSURL URLWithString:newURL];
+    [weexInstance.viewController.navigationController pushViewController:controller animated:YES];
 }
 
 

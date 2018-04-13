@@ -32,7 +32,7 @@
 		D1ABFC40207DB3C10012DF20 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ABFC3F207DB3C10012DF20 /* libsqlite3.0.tbd */; };
 		D1ABFC7A207DB4720012DF20 /* WeexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ABFC79207DB4720012DF20 /* WeexManager.m */; };
 		D1CAB7B0207E061100651DB8 /* MagicNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CAB7AF207E061100651DB8 /* MagicNetworkManager.swift */; };
-		D1ECBE99207B4D420015146D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1ECBE98207B4D410015146D /* Images.xcassets */; };
+		D1ECBE99207B4D420015146D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1ECBE98207B4D410015146D /* Assets.xcassets */; };
 		E6E6D29AD5B810F2CFED893D /* Pods_MagicCubePackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546ABE22E4B96E60EBE501A4 /* Pods_MagicCubePackage.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +97,7 @@
 		D1ABFC78207DB4720012DF20 /* WeexManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeexManager.h; sourceTree = "<group>"; };
 		D1ABFC79207DB4720012DF20 /* WeexManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeexManager.m; sourceTree = "<group>"; };
 		D1CAB7AF207E061100651DB8 /* MagicNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicNetworkManager.swift; sourceTree = "<group>"; };
-		D1ECBE98207B4D410015146D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1ECBE98207B4D410015146D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +237,7 @@
 				D17CBAF820720A0A00BAF207 /* ViewController.swift */,
 				D17CBAFA20720A0A00BAF207 /* Main.storyboard */,
 				D17CBAFF20720A0C00BAF207 /* LaunchScreen.storyboard */,
-				D1ECBE98207B4D410015146D /* Images.xcassets */,
+				D1ECBE98207B4D410015146D /* Assets.xcassets */,
 				D17CBB0220720A0C00BAF207 /* Info.plist */,
 				D17CBB252072367300BAF207 /* MagicCubePackage-Bridging-Header.h */,
 			);
@@ -348,7 +348,6 @@
 			children = (
 				D1AAD67B207DBBCB00865CC5 /* Handler */,
 				D1AAD682207DBBCB00865CC5 /* Module */,
-				D1AAD68B207DBBCB00865CC5 /* Other */,
 			);
 			path = "Extend(扩展)";
 			sourceTree = "<group>";
@@ -375,13 +374,6 @@
 				D1AAD689207DBBCB00865CC5 /* WXTitleBarModule.m */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		D1AAD68B207DBBCB00865CC5 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		D1AAD692207DBBCB00865CC5 /* ViewController */ = {
@@ -503,7 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1ECBE99207B4D420015146D /* Images.xcassets in Resources */,
+				D1ECBE99207B4D420015146D /* Assets.xcassets in Resources */,
 				D17CBB0120720A0C00BAF207 /* LaunchScreen.storyboard in Resources */,
 				D17CBAFC20720A0A00BAF207 /* Main.storyboard in Resources */,
 				D1AAD64B207DB98000865CC5 /* bundlejs in Resources */,

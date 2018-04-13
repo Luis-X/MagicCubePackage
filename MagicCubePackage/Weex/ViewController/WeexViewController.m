@@ -76,7 +76,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self setupRightBarItem];
     [self.navigationController setNavigationBarHidden:_showNavigationBar];
 }
 
@@ -171,6 +170,7 @@
     }
 }
 
+#pragma mark - 状态
 - (void)updateInstanceState:(WXState)state
 {
     if (_instance && _instance.state != state) {
@@ -178,32 +178,11 @@
         
         if (state == WeexInstanceAppear) {
             [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"viewappear" params:nil domChanges:nil];
-        }
-        else if (state == WeexInstanceDisappear) {
+        } else if (state == WeexInstanceDisappear) {
             [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"viewdisappear" params:nil domChanges:nil];
         }
+        
     }
-}
-
-#pragma mark - refresh
-- (void)refreshWeex
-{
-    [self render];
-}
-
-#pragma mark - UIBarButtonItems
-
-- (void)setupRightBarItem
-{
-    if ([self.url.scheme hasPrefix:@"http"]) {
-        [self loadRefreshCtl];
-    }
-}
-
-- (void)loadRefreshCtl {
-    UIBarButtonItem *refreshButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reload"] style:UIBarButtonItemStylePlain target:self action:@selector(refreshWeex)];
-    refreshButtonItem.accessibilityHint = @"click to reload curent page";
-    self.navigationItem.rightBarButtonItem = refreshButtonItem;
 }
 
 #pragma mark - websocket
@@ -250,7 +229,7 @@
 #pragma mark - notification
 - (void)notificationRefreshInstance:(NSNotification *)notification
 {
-    [self refreshWeex];
+    [self render];
 }
 
 @end
