@@ -4,7 +4,7 @@ target "MagicCubePackage" do
 use_frameworks!
 platform :ios, '8.0'
 pod 'JLRoutes', '~> 2.0'				# 路由跳转
-pod 'QMUIKit', '~> 2.4.0'				# 腾讯QMUI
+pod 'QMUIKit', '~> 2.5.1'				# 腾讯QMUI
 pod 'WeexSDK'
 pod 'SocketRocket', '0.4.2'
 pod 'WXDevtool',   '0.15.3', :configurations => ['Debug']
